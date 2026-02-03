@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(255, 255, 255);
+                border: 20px solid #447fe4;
+                padding: 10px;
+            }
+
+            h2{
+                color:rgba(0, 0, 0);
+                font-size:x-large;
+                font-family:'Courier New', Courier, monospace;
+                text-align: center;
+                text-decoration:underline;
+            }
+
+            form{
+            color:black;
+            font-size: larger;
+            text-align: center;
+            margin-top: 50px;
+            }
+
+            p{
+            color:black;
+            font-size: larger;
+            text-align: center;
+            margin-top: 50px;
+            }
+
+        </style>
+    </head>
+
+    <head>
+        <title>Fox Day Regrestration</title>
+    </head>
+    <body>
+        <h2>Register For Events Here</h2>
+
+        <form action = "process.php" method = "POST">
+            <label for = "name">Name:</label> 
+            <input type = "text" id = "name" name = "name" required><br><br>
+
+            <label for = "email">Email:</label> 
+            <input type = "email" id = "email" name = "email" required><br><br>
+
+            <label for = "event">Event selection:</label>
+            <select id = "event" name = "event" required>
+                <option value = "">--Options--</option>
+                <option value  = "fox day face paint">Fox Day Face Paint</option>
+                <option value = "gift bag giveaway">Gift Bag Giveaway</option>
+                <option value = "foxday trivia">Foxday Trivia</option>
+                <option value = "fox day photo booth">Fox Day Photo Booth</option>
+            </select><br><br>
+
+            <label for = "year">Year:</label>
+            <select id = "year" name = "year" required>
+                <option value = "">--Options--</option>
+                <option value  = "freshman">Freshman</option>
+                <option value = "sophmore">Sophmore</option>
+                <option value = "junior">Junior</option>
+                <option value = "senior">Senior</option>
+            </select><br><br>
+
+            <button types = "submit"> Submit!</button>
+
+            <p>Which event are you most excited for?</p>
+
+        </form>
+    </body>
+</html>
